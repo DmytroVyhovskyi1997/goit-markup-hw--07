@@ -1,0 +1,77 @@
+.footer-submit{
+    margin-left: 93px;
+}
+.div-footer{
+    position: relative;
+}
+.footer-submit__footer{
+    display: flex;
+}
+.footer-submit__id{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 0;
+    background-color:$text-color;
+    }
+.footer-submit__id-input::placeholder{
+color: rgba(255, 255, 255, 0.6);
+padding-left: 16px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.footer-submit__id-input:focus{
+    color: $accent-text-color;
+   
+}
+.styles-footer{
+    display:flex;
+}
+.styles-footer{
+    width: 200px;
+    height: 50px;
+     color: $accent-text-color;
+      background-color: $accent-color;
+      font-family: 'Roboto';
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.9;
+      padding-left: 28px;
+      padding-right: 0;
+      padding-bottom: 0;
+    padding-top: 0;
+      margin-left: 12px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .styles-footer:focus{
+         outline: 1px solid $accent-color;
+         box-shadow: $card-shadow;
+    }
+    .styles-svg{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 13px;
+        right: 28px;
+        bottom: 13px;
+        background-color:$accent-color;
+       
+    }
+    .footer-submit__mail{
+        font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color:$accent-text-color;
+    }

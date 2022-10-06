@@ -1,0 +1,28 @@
+.clien {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clien__social {
+    display: flex;
+    border: 1px solid $color-logo;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    fill: $color-logo;
+    text-align: center;
+    justify-content: center;
+    padding: 16px 32px;
+  }
+  
+  .clien__link:hover svg,
+  .clien__link:focus svg {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
