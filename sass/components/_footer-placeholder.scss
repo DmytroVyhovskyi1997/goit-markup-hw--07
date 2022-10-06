@@ -15,7 +15,9 @@
     border-radius: 4px;
     padding: 0;
     background-color:$text-color;
+    transition: $tranzition;
     }
+   
 .footer-submit__id-input::placeholder{
 color: rgba(255, 255, 255, 0.6);
 padding-left: 16px;
@@ -24,7 +26,6 @@ padding-bottom: 15px;
 }
 .footer-submit__id-input:focus{
     color: $accent-text-color;
-   
 }
 .styles-footer{
     display:flex;
