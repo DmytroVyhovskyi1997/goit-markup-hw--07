@@ -26,13 +26,12 @@
     margin-right: 10px;
     color: $accent-text-color;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer__col-link:hover,
-  .footer__col-link:focus {
+    transition: $tranzition;
+  &:hover,
+  &:focus {
     background-color: $accent-color;
     color: $accent-text-color;
-  }
+  }}
   
   .footer__col-symbol {
     width: 20px;

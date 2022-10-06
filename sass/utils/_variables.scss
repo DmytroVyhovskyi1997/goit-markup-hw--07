@@ -9,12 +9,22 @@ $color-logo:#afb1b8;
 $font-famaly-roboto:'Roboto';
 $font-famaly-releway:'Raleway';
 $card-sat-gap: 30px;
+$tranzition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 $card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
   0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  $overlay-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 
 
   html {
     box-sizing: border-box;
+  }
+  body {
+    background-color: $accent-text-color;
+    font-family: $font-famaly-roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.9;
   }
   
   *,
@@ -31,7 +41,7 @@ $card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
   }
   
   p {
-    color: #757575;
+    color: $text-link;
   }
   .conteiner {
     width: 1200px;

@@ -1,3 +1,25 @@
+
+.text-content__port {
+  font-family: $font-famaly-roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $text-color;
+}
+
+.text-content__image {
+  font-family: $font-famaly-roboto;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+
+.overlay__photo:hover,
+.overlay__photo:focus {
+  box-shadow:$overlay-shadow;
+}
 .overlay {
     margin: 0;
     padding-left: 0;
@@ -10,7 +32,7 @@
   }
   
   .overlay__photo-active {
-    flex-basis: calc (100px / 3 - #{$card-sat-gap});
+    flex-basis: calc (100% / 3 - #{$card-sat-gap});
     margin-left: $card-sat-gap;
     margin-top: $card-sat-gap;
   }
@@ -19,13 +41,18 @@
     border: 1px solid #eeeeee;
     border-radius: 4px;
     padding: 20px 24px;
+
+    .overlay__link:hover &,
+    .overlay__link:focus & {
+      box-shadow: $overlay-shadow;
+    }
   }
   
   .card__text {
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color:$accent-text-color;
   }
   
   .card__thumb {
@@ -43,16 +70,11 @@
     padding: 0 24px;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    transition: $tranzition;
   
-  .overlay__link:hover .card__portfolio,
-  .overlay__link:focus .card__portfolio {
+  
+  .overlay__link:hover &,
+  .overlay__link:focus & {
     opacity: 1;
     transform: translateY(0);
-  }
-  .overlay__link:hover .text-content,
-  .overlay__link:focus .text-content {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+  }}

@@ -1,6 +1,6 @@
 address {
     color: $accent-text-color;
-    font-family: 'Roboto';
+    font-family: $font-famaly-roboto;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -24,7 +24,7 @@ address {
   }
   .footer-contact__title {
     color: $accent-text-color;
-    font-family: 'Raleway';
+    font-family: $font-famaly-releway;
     text-decoration: none;
     font-weight: 700;
     font-style: normal;
@@ -50,9 +50,8 @@ address {
     letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 9px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contact__footer:hover,
-  .contact__footer:focus {
+    transition: $tranzition;
+  &:hover,
+  &:focus {
     color: $accent-color;
-  }
+  }}
