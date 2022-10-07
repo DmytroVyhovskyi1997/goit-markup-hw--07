@@ -157,7 +157,7 @@
       position: absolute;
       clip: rect(0 0 0 0);}
 
-      .check__box-check:checked + .check__box-icon{
+      .check-box__check:checked + .check-box__icon{
         background-color: $accent-color;
         border: none;
     }
